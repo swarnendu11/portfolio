@@ -49,11 +49,20 @@
     </section>
 
     <script>
+        /**
+         * Toggle the display state of the navigation menu.
+         * @function
+         */
         function toggleMenu() {
             const menu = document.getElementById('menu');
             menu.classList.toggle('active');
         }
+
+        // Toggle the display state of the navigation menu when the hamburger menu is clicked
+        document.getElementById('hamburger-menu').addEventListener('click', toggleMenu);
+        
     </script>
+    
 </body>
 
 </html>
